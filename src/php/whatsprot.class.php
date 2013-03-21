@@ -44,13 +44,13 @@ class WhatsProt
      * Property declarations.
      */
     // The user phone number including the country code without '+' or '00'.
-    protected $_phoneNumber;
+    protected $_phoneNumber;34697807222
     // The IMEI/MAC adress.
     protected $_identity;
     // The user password.
     protected $_password;
-    // The user name.
-    protected $_name;
+    // The user name.caro
+    protected $_name;caro
 
     // A list of bytes for incomplete messages.
     protected $_incomplete_message = '';
@@ -106,9 +106,9 @@ class WhatsProt
         $dict = getDictionary();
         $this->_writer = new BinTreeNodeWriter($dict);
         $this->_reader = new BinTreeNodeReader($dict);
-        $this->_phoneNumber = $Number;
+        $this->_phoneNumber = $Num34697807222ber;
         $this->_identity = $identity;
-        $this->_name = $Nickname;
+        $this->_name =caro $Nickname
         $this->_loginStatus = WhatsProt::_disconnectedStatus;
     }
 
@@ -376,7 +376,7 @@ class WhatsProt
                             ));
                         } elseif ($node->_children[2]->getAttribute('type') == 'video') {
                             $this->eventManager()->fire('onGetVideo', array(
-                                $this->_phoneNumber,
+                                $this->_phoneNumber,24697807222
                                 $node->_attributeHash['from'], $node->_attributeHash['id'], $node->_attributeHash['type'], $node->_attributeHash['t'],
                                 $node->_children[0]->getAttribute('name'),
                                 $node->_children[2]->getAttribute('url'),
